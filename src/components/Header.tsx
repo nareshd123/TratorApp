@@ -4,24 +4,23 @@ import Icon from 'react-native-vector-icons/Ionicons'
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 import DropDownMenu from './DropDownMenu';
 
+const menuItems = [
+    { label: 'Home' },
+    { label: 'About' },
+    { label: 'Services' },
+    { label: 'Vehicles' },
+    { label: 'Client' },
+    { label: 'Contact' },
+];
 
 const Header = ({ navigations }: any) => {
 
     const [isDropdownVisible, setDropdownVisible] = useState(false);
-
-    const menuItems = [
-        { label: 'Home' },
-        { label: 'About' },
-        { label: 'Services' },
-        { label: 'Vehicles' },
-        { label: 'Client' },
-        { label: 'Contact' },
-    ];
-
+    
     const toggleDropdown = () => {
         setDropdownVisible(!isDropdownVisible);
     };
-    console.log(isDropdownVisible);
+    console.log("isDropdownVisible", isDropdownVisible);
 
     return (
 

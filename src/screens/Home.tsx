@@ -5,6 +5,8 @@ import BannerSlider from '../components/BannerSlider'
 import GlobalStyle from '../utils/GlobalStyle'
 import DropDownSearch from '../components/DropDownSearch'
 import Bestoffers from '../components/Bestoffers'
+import WhatCustomerSays from '../components/WhatCustomerSays'
+import WhyChooseUs from '../components/WhyChooseUs'
 
 
 const Home = ({ navigation }: any) => {
@@ -15,6 +17,8 @@ const Home = ({ navigation }: any) => {
                 <BannerSlider />
                 <DropDownSearch />
                 <Bestoffers/>
+                <WhyChooseUs/>
+                <WhatCustomerSays/>
             </ScrollView>
 
         </View>
